@@ -9,7 +9,7 @@
 
 ## Meteors Problem
 
-In the [Meteors problem on SPOJ](https://www.spoj.com/problems/METEORS/), a naive solution involves performing binary search combined with a segment tree, resulting in a time complexity of \( O(nq \log^2 n) \).
+In the [Meteors problem on SPOJ](https://www.spoj.com/problems/METEORS/), a naive solution involves performing binary search combined with a segment tree, resulting in a time complexity of $O(nq \log^2 n)$.
 
 Here is a code snippet of this naive approach:
 
@@ -38,7 +38,7 @@ for (int i = 1; i <= n; i++) {
 
 ### Optimized Solution with Parallel Binary Search
 
-We can improve this solution by noticing that if \( mid_1 \leq mid_2 \leq \dots \leq mid_n \) holds, we can apply the **two-pointer method**. To ensure this, we sort the Binary Search queries by their mid-values, repeating the process \( \log_2(q) \) times. This leads to an improved time complexity of \( O((n + q) \log^2 q) \).
+We can improve this solution by noticing that if $mid_1 \leq mid_2 \leq \dots \leq mid_n$ holds, we can apply the **two-pointer method**. To ensure this, we sort the Binary Search queries by their mid-values, repeating the process $\log_2(q)$ times. This leads to an improved time complexity of $O((n + q) \log^2 q)$.
 
 Here is the optimized approach:
 
@@ -68,9 +68,9 @@ for (int cycle = 0; cycle <= log2(q); cycle++) {
 
 In [Problem A](https://codeforces.com/contestInvitation/19d60a2ccc01ea29c4bb5a8c9cc24f7809853b0b), the solution is similar to the Meteors problem.
 
-A **naive solution** involves Binary Search with **Disjoint Set Union (DSU)**, resulting in a time complexity of \( O(qm \log^2 m) \).
+A **naive solution** involves Binary Search with **Disjoint Set Union (DSU)**, resulting in a time complexity of $O(qm \log^2 m)$.
 
-To improve this, you can use **Parallel Binary Search with DSU**, reducing the time complexity to \( O((q + m) \log^2 m) \).
+To improve this, you can use **Parallel Binary Search with DSU**, reducing the time complexity to $O((q + m) \log^2 m)$.
 
 Additionally, you can further optimize the solution using the inverse Ackermann function, which helps with DSU operations.
 
