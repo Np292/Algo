@@ -64,8 +64,8 @@ for (int cycle = 0; cycle <= log2(q); cycle++) {
 
 ---
 
-## Almaty and Haziks Problem
-
+## Almaty and Haziks Problem , CSES-2101
+Similar problem [CSES 2101](https://cses.fi/problemset/task/2101/)
 In [Problem A](https://codeforces.com/contestInvitation/19d60a2ccc01ea29c4bb5a8c9cc24f7809853b0b), the solution is similar to the Meteors problem.
 
 A **naive solution** involves Binary Search with **Disjoint Set Union (DSU)**, resulting in a time complexity of $O(qm \log^2 m)$.
